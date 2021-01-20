@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>My First ASP.NET Web App</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel='shortcut icon' type="image/x-icon" href="img/favicon.jfif"/>
+
+</head>
+
+<body>
+    <header class="header">Welcome</header>
+    <h1>Ben Fankhauser</h1>
+    <img class="image" src="img/byusoccer.jfif" /><br />
+    <fieldset class="fieldset-auto-width">
+        <legend>The Future: What I Want to Learn and Where I Want to Be</legend>
+        <p>
+            IS 413 may be the most important class for me personally because the internship I am hoping to land has a lot of ASP.NET and C# aspects to it. Accordingly, I hope to learn how to create functional and eye catching web applications using the .NET MVC Core Framework and C#. In addition to the cirriculum, I hope to become a better problem solver and a more confident coder.
+        </p>
+
+        <p class="bold">Jobs I am Considering:</p>
+
+        <ol>
+            <li>IS Project Manager</li>
+            <li>Cyber Security Consultant</li>
+            <li>Application Developer</li>
+        </ol>
+    </fieldset>
+    <!--    grade calclulator form-->
+    <div class="div">
+        <form>
+            <fieldset class="fieldset-auto-width">
+                <legend>Grade Calculator</legend>
+                <label for="assignmentsPercent">Assignments Grade out of 50:</label>
+                <input type="number" id="assignmentsPercent" name="assignmentsPercent" min="0" max="50" step=".25" value="0.00"><br><br>
+
+                <label for="GroupProjectPercent">Group Project Grade out of 10:</label>
+                <input type="number" id="GroupProjectPercent" name="GroupProjectPercent" min="0" max="10" step=".25" value="0.00"><br><br>
+
+                <label for="QuizzesPercent">Quizzes Grade out of 10:</label>
+                <input type="number" id="QuizzesPercent" name="QuizzesPercent" min="0" max="10" step=".25" value="0.00"><br><br>
+
+                <label for="ExamsPercent">Exams Grade out of 20:</label>
+                <input type="number" id="ExamsPercent" name="ExamsPercent" min="0" max="20" step=".25" value="0.00"><br><br>
+
+                <label for="IntexPercent">INTEX Grade out of 10:</label>
+                <input type="number" id="IntexPercent" name="IntexPercent" min="0" max="10" step=".25" value="0.00"><br><br>
+
+                <center>
+                    <input type="button" name="submit" id="submit" value="Calculate Final Grade" />
+                </center>
+                <script src="js/GradeCalculator.js"></script>
+            </fieldset>
+        </form>
+
+        <fieldset>
+            <legend>Calculated Grade</legend>
+            <a class="grade" id="output"></a>
+        </fieldset>
+        
+    </div>
+
+<footer>Copyright @IS413</footer>
+</body>
+
+
+
+</html>
