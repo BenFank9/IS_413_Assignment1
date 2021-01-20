@@ -1,4 +1,4 @@
-﻿var submit = document.getElementById("submit");
+var submit = document.getElementById("submit");
 
 
 submit.addEventListener("click", () => {
@@ -7,6 +7,8 @@ submit.addEventListener("click", () => {
 
 function CalculateGrade() {
 
+    /*get all of the inputs from the form and store them to variables*/
+
     var iAssignmentScore = parseInt(document.getElementById("assignmentsPercent").value);
     var iGroupProjectScore = parseInt(document.getElementById("GroupProjectPercent").value);
     var iQuizzesScore = parseInt(document.getElementById("QuizzesPercent").value);
@@ -14,6 +16,8 @@ function CalculateGrade() {
     var iIntexScore = parseInt(document.getElementById("IntexPercent").value);
     var iFinalGrade = 0;
     var iLetterGrade = '';
+
+    //calculate the final grade percent and letter
 
     iFinalGrade = iAssignmentScore + iGroupProjectScore + iQuizzesScore + iExamsScore + iIntexScore;
 
@@ -53,6 +57,8 @@ function CalculateGrade() {
     else {
         iLetterGrade = "E"
     }
+
+    //output the calculated grades into the p tag id=output
 
     var output = "Final Percent Grade:<br><br> " + iFinalGrade + "%<br><br>" + "Final Letter Grade:<br><br> " + iLetterGrade; 
 
